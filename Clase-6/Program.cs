@@ -24,7 +24,7 @@ static void promedios()
     int suma = 0;
     foreach (int promedio in notas)
     {
-        suma = suma + promedio; //Así es como se debe de hacer 
+        suma = suma + promedio;  
     }
     Console.WriteLine("El promedio es igual a " + suma / 6);
 }
@@ -46,7 +46,7 @@ static void orden()
     int suma = 0;
     foreach (int nota in notas)
     {
-        suma = suma + nota; //Así es como se debe de hacer 
+        suma = suma + nota; 
     }
     Console.WriteLine("El promedio es igual a " + (suma / notas.Length));
     Console.WriteLine("Original");
@@ -66,17 +66,17 @@ static void Ejercicio()
         Console.WriteLine("Datos originales:");
         ImprimirArreglo(nombres);
 
-        // Intercambiar el valor en la posición 0 con el valor en la posición 4
+        
         string temp = nombres[0];
         nombres[0] = nombres[4];
         nombres[4] = temp;
 
-        // Imprimir el arreglo después del intercambio
+        
         Console.WriteLine("\nArreglo después del intercambio:");
         ImprimirArreglo(nombres);
     }
 
-    // Método para imprimir el arreglo
+    
     static void ImprimirArreglo(string[] arr)
 {
     foreach (string nombre in arr)
